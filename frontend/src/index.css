@@ -1,0 +1,44 @@
+body {
+  background: #42434a;
+  font-family: monospace;
+  /*   text-align: center; */
+}
+
+.formTextColor {
+  color: white;
+  margin-top: 20%;
+}
+
+.formButtonCenter {
+  text-align: center;
+  margin-top: 5%;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  margin: 1rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.cardText {
+  font-size: 2em;
+  font-weight: 900;
+  border: #42434a solid 1px;
+  padding: 0.5rem;
+}
+
+.cardButton {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contentForm {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 5px;
+}
