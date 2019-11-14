@@ -35,6 +35,6 @@ app.use("*", (req, res) => {
   await app.listen(app.get("port"));
   console.log("server on port", app.get("port"));
 } */
-await app.listen(app.get("port"));
+app.listen(app.get("port"));
 console.log("server on port", app.get("port"));
 /* main(); */
