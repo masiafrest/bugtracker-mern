@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": "cd frontend && npm install --only=dev && npm install && npm run build",
+    "heroku-postbuild": "cd frontend && npm install && npm run build",
     "dev": "nodemon src/index.js"
   },
   "keywords": [],
