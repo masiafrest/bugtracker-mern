@@ -6,11 +6,15 @@ const path = require("path");
 
 // settings
 app.set("port", process.env.PORT || 4000);
-const env = process.env.NODE_ENV;
 
-if (env === "production") {
+//const env = process.env.NODE_ENV;
+/* if (env === "production") {
   app.use("/", express.static(`${__dirname}/frontend/build/`));
-}
+} */
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, "frontend/build")));
+
 // middlewares
 app.use(morgan("dev"));
 app.use(cors());
