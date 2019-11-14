@@ -8,7 +8,7 @@ const path = require("path");
 app.set("port", process.env.PORT || 4000);
 const env = process.env.NODE_ENV;
 console.log(env);
-if (env !== "production") {
+if (env === "production") {
   app.use("/", express.static(`${__dirname}/frontend/public/`));
 }
 // middlewares
